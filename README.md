@@ -82,6 +82,10 @@ A comprehensive Django REST API for managing employees, departments, attendance,
    ```bash
    docker compose exec web python manage.py seed_data
    ```
+   5. Alternatively, pull the pre-built image from Docker Hub:
+      ```bash
+      docker pull arkonafoob/assigmentdjango-web
+      ```
 
 ## API Usage
 
