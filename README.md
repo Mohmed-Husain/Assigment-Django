@@ -2,6 +2,11 @@
 
 A comprehensive Django REST API for managing employees, departments, attendance, and performance reviews.
 
+## Docker image onine 
+   Pull the pre-built image from Docker Hub:
+   ```bash
+      docker pull arkonafoob/assigmentdjango-web
+   ```
 ## Features
 
 - **Employee Management**: Create, read, update, and delete employee records
@@ -82,10 +87,10 @@ A comprehensive Django REST API for managing employees, departments, attendance,
    ```bash
    docker compose exec web python manage.py seed_data
    ```
-   5. Alternatively, pull the pre-built image from Docker Hub:
-      ```bash
+5. Alternatively, pull the pre-built image from Docker Hub:
+   ```bash
       docker pull arkonafoob/assigmentdjango-web
-      ```
+   ```
 
 ## API Usage
 
@@ -173,10 +178,6 @@ The system implements three user roles with different permission levels:
 
 The system provides visual representations of attendance and performance data at `/api/employees/charts/`.
 
-## Docker Support
-
-See [README.docker.md](README.docker.md) for detailed instructions on using Docker with this project.
-
 ## Testing
 
 Run the test suite with:
@@ -185,14 +186,3 @@ Run the test suite with:
 python manage.py test
 ```
 
-## Deployment
-
-This application can be deployed to various cloud platforms:
-
-- **Render**: Follow the [Render deployment guide](https://render.com/docs/deploy-django)
-- **Railway**: Follow the [Railway deployment guide](https://docs.railway.app/deploy/django)
-- **Vercel**: Follow the [Vercel deployment guide](https://vercel.com/guides/deploying-django-to-vercel)
-
-## License
-
-This project is licensed under the MIT License.
