@@ -1,6 +1,9 @@
 import os
 import environ
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(override=True)
+
 
 # Initialize environment variables
 env = environ.Env()
