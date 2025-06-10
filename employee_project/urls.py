@@ -41,22 +41,24 @@ def home(request):
             <li><a href="/swagger/">Swagger Docs</a></li>
             <li><a href="/redoc/">ReDoc Docs</a></li>
             <li><a href="/admin/">Admin Panel</a></li>
-            <li><a href="/api-token-auth/">API Token Auth</a> (POST with username & password)</li>
-            
-            <li><a href="/api/employees/departments/">Departments</a></li>
-            <li><a href="/api/employees/list/">Employees</a></li>
-            <li><a href="/api/employees/profiles/">User Profiles</a></li>
-            <li><a href="/api/employees/charts/">Charts</a></li>
-            <li><a href="/api/employees/register/">Register New User</a></li>
-
-            <li><a href="/api/attendance/">Attendance API Root</a></li>
-            <li><a href="/api/performance/">Performance API Root</a></li>
         </ul>
-        <p><strong>Note:</strong> Some endpoints require POST/PUT methods or authentication and may not open directly in browser.</p>
+        
     </body>
     </html>
     """
     return HttpResponse(html)
+
+#  <li><a href="/api-token-auth/">API Token Auth</a> (POST with username & password)</li>
+            
+#             <li><a href="/api/employees/departments/">Departments</a></li>
+#             <li><a href="/api/employees/list/">Employees</a></li>
+#             <li><a href="/api/employees/profiles/">User Profiles</a></li>
+#             <li><a href="/api/employees/charts/">Charts</a></li>
+#             <li><a href="/api/employees/register/">Register New User</a></li>
+
+#             <li><a href="/api/attendance/">Attendance API Root</a></li>
+#             <li><a href="/api/performance/">Performance API Root</a></li>
+# <p><strong>Note:</strong> Some endpoints require POST/PUT methods or authentication and may not open directly in browser.</p>
 
 schema_view = get_schema_view(
     openapi.Info(
